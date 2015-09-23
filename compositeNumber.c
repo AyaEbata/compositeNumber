@@ -7,6 +7,8 @@ int a = 2, b = 2, c = 2, count = 0;
 int main(void){
     char str[1024];
 
+    printf("STDIN: ");
+
     while(fgets(str, sizeof(str), stdin) != NULL){
         multiplication(atoi(str));
         printf("STDOUT: %d\n", count);
@@ -14,6 +16,8 @@ int main(void){
         b = 2;
         c = 2;
         count = 0;
+        
+        printf("STDIN: ");
     }
     
     return 0;
